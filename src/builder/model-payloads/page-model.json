@@ -1,0 +1,6 @@
+{
+  "name": "page",
+  "kind": "page",
+  "description": "Lainey website pages created and edited in Builder.io",
+  "urlPattern": "*"
+}

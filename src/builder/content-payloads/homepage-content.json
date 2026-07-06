@@ -1,0 +1,18 @@
+{
+  "name": "Lainey Home",
+  "model": "page",
+  "url": "/",
+  "data": {
+    "announcement": "New notes from Lainey — essays, reading lists, and quiet things from the table.",
+    "heroTitle": "Lainey",
+    "heroSubtitle": "Quiet essays, reading lists, and notes from the table.",
+    "sections": [
+      "Essays",
+      "Reading Lists",
+      "Notes From Cold Coffee",
+      "Ten Books for a Rainy Table",
+      "About Lainey",
+      "Email signup"
+    ]
+  }
+}

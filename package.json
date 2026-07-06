@@ -1,0 +1,27 @@
+{
+  "name": "lainey-shopify",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Builder-rendering Lainey support app with explicit static fallback and a documented future Shopify boundary.",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "next typegen && tsc --noEmit",
+    "qa:scope": "node scripts/qa/scope-check.mjs"
+  },
+  "dependencies": {
+    "@builder.io/sdk-react": "5.2.4",
+    "next": "16.2.10",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "26.1.0",
+    "@types/react": "19.2.17",
+    "typescript": "6.0.3"
+  }
+}
