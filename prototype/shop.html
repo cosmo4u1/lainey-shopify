@@ -3,115 +3,122 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Shop — Lainey</title>
+<title>Lainey | shop preview</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="announcement">The shop is being prepared. <em>Purchases will open through the Lainey Shopify checkout when live.</em></div>
+<div class="announcement">The shop preview is intentionally non-commercial until the store has approved public routes and real imagery.</div>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html">Lainey</a>
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <div class="nav-item">
-        <button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true">Read <span class="caret">▾</span></button>
-        <div class="drop">
-          <span class="drop-soon">Essays <span class="tag">soon</span></span>
-          <span class="drop-soon">Reading Lists <span class="tag">soon</span></span>
-          <span class="drop-soon">Notes from the Table <span class="tag">soon</span></span>
-        </div>
-      </div>
-      <div class="nav-item active-item">
-        <button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true">Shop <span class="caret">▾</span></button>
-        <div class="drop">
-          <a href="#wear">Lainey Wear</a>
-          <a href="#writings">Writings</a>
-          <a href="#things">Things</a>
-          <a href="#status">Shop Status <span class="tag">coming soon</span></a>
-        </div>
-      </div>
-      <a>About</a>
-      <a>Contact</a>
+      <a href="index.html#read">Read</a>
+      <a class="active" href="shop.html">Shop</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
   </div>
 </header>
-<main>
+<main class="page-shop">
   <section class="hero shop-hero">
-    <div>
-      <div class="kicker">the shop</div>
-      <div class="wordmark">Lainey</div>
-      <h1 class="hero-title">A future home for Lainey wear, writings, and <em>small things</em> from the world around the reading lists.</h1>
-      <span class="status-line">Purchases will open through the Lainey Shopify checkout when the shop is live</span>
+    <div class="hero-copy">
+      <div class="kicker">shop preview</div>
+      <p class="hero-mark">Lainey</p>
+      <h1>A future home for wear, writings, and small things from the table.</h1>
+      <p class="hero-sub">This page now behaves like a launch brief instead of a pretend storefront. It shows direction, not fake inventory.</p>
+      <div class="actions">
+        <a class="button" href="#lanes">See the lanes</a>
+        <a class="button secondary" href="index.html">Back to the editorial site</a>
+      </div>
     </div>
-    <div class="stack shop-stack" aria-hidden="true">
-      <div class="blob blob-1 art-fabric"><span class="chip">the wear</span></div>
-      <div class="blob blob-2 art-coffee"><span class="chip">the table</span></div>
-      <div class="blob blob-3 art-paper"><span class="chip">the shelf</span></div>
+    <aside class="hero-card shop-card" aria-label="Shop rules">
+      <p class="eyebrow">Public rules</p>
+      <ul class="rule-list">
+        <li>No prices until the store surface is approved.</li>
+        <li>No product tiles without real imagery.</li>
+        <li>No cart language while commerce is still held back.</li>
+        <li>No Shopify links until the destination is owner-safe.</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="section" id="lanes">
+    <div class="section-head">
+      <div>
+        <div class="kicker">lanes</div>
+        <h2>Three categories, zero pretending.</h2>
+      </div>
+      <p class="lede">The strongest visible improvement was to replace fake product theater with launch criteria the owner can actually trust.</p>
+    </div>
+    <div class="lane-grid">
+      <article class="lane-card">
+        <p class="eyebrow">Lainey Wear</p>
+        <h3>Clothing and soft goods that match the reading-world tone.</h3>
+        <p>Held until there is approved imagery, verified collection routing, and public copy that does not inherit cross-brand debris from the current store.</p>
+        <span class="pill">Status: held back</span>
+      </article>
+      <article class="lane-card">
+        <p class="eyebrow">Writings</p>
+        <h3>Printed or digital writing that belongs to the Lainey lane.</h3>
+        <p>Held until the public path is clear about what is editorial, what is downloadable, and what is only a concept.</p>
+        <span class="pill">Status: held back</span>
+      </article>
+      <article class="lane-card">
+        <p class="eyebrow">Things</p>
+        <h3>Small objects that feel native to the table.</h3>
+        <p>Held until those objects have real supporting photography and a storefront route that does not expose unfinished staging material.</p>
+        <span class="pill">Status: held back</span>
+      </article>
     </div>
   </section>
+
+  <section class="section image-plan">
+    <div class="section-head">
+      <div>
+        <div class="kicker">imagery</div>
+        <h2>What the shop still needs.</h2>
+      </div>
+      <p class="lede">Real imagery is the blocker. Better CSS alone cannot close the gap between a reading-world brand and a launchable shop.</p>
+    </div>
+    <div class="shot-grid">
+      <div class="shot-card"><strong>1.</strong><span>Hero portrait or reading-table atmosphere.</span></div>
+      <div class="shot-card"><strong>2.</strong><span>Cup, book, and table still life.</span></div>
+      <div class="shot-card"><strong>3.</strong><span>Notebook or writing-detail frame.</span></div>
+      <div class="shot-card"><strong>4.</strong><span>Fabric detail for the wear lane.</span></div>
+      <div class="shot-card"><strong>5.</strong><span>Small objects still life for the things lane.</span></div>
+      <div class="shot-card"><strong>6.</strong><span>Category image for Lainey Wear.</span></div>
+      <div class="shot-card"><strong>7.</strong><span>Category image for Writings.</span></div>
+      <div class="shot-card"><strong>8.</strong><span>Category image for Things.</span></div>
+    </div>
+  </section>
+
   <section class="section">
-    <div class="lane-row reveal" id="wear">
-      <div class="lane-art art-fabric"></div>
-      <div class="lane-copy">
-        <h3>Lainey Wear</h3>
-        <p>Soft, quiet pieces for coffee walks, bookshop days, and staying out a little later than planned.</p>
-        <!-- Shopify collection URL goes here when live -->
-        <span class="button secondary soon" aria-disabled="true">Coming soon</span>
+    <div class="split-panel launch-panel">
+      <div class="panel-note">
+        <p>Current truth: the public preview can frame the shop well, but it should not act like a checkout surface yet.</p>
       </div>
-    </div>
-    <div class="lane-row flip reveal" id="writings">
-      <div class="lane-art art-paper"></div>
-      <div class="lane-copy">
-        <h3>Writings</h3>
-        <p>Essays, reading notes, lists, and longer pieces collected from Lainey's shelf.</p>
-        <!-- Shopify collection URL goes here when live -->
-        <span class="button secondary soon" aria-disabled="true">Coming soon</span>
-      </div>
-    </div>
-    <div class="lane-row reveal" id="things">
-      <div class="lane-art art-coffee"></div>
-      <div class="lane-copy">
-        <h3>Things</h3>
-        <p>Small objects, paper goods, and seasonal extras shaped slowly.</p>
-        <!-- Shopify collection URL goes here when live -->
-        <span class="button secondary soon" aria-disabled="true">Coming soon</span>
+      <div class="panel-copy">
+        <p>The shop is still a support page for launch direction, not a product grid. That is not a weakness. It is a cleaner public contract than sending people into placeholder images, mixed-brand copy, or unfinished store routes.</p>
+        <a class="text-link" href="index.html#contact">Return to the home contact section</a>
       </div>
     </div>
   </section>
-  <div class="table-note reveal" id="status">
-    <div class="table-note-inner">
-      <p>“Built slowly, opened only when ready.”</p>
-      <p class="small">Purchases will open through the Lainey Shopify checkout when the shop is live.</p>
-    </div>
-  </div>
 </main>
 <footer class="footer">
   <div class="footer-inner">
     <div>
-      <a class="brand" href="index.html">Lainey</a>
-      <p>Quiet essays, reading lists, and things from the table. Written slowly, kept simple, read at whatever pace the coffee allows.</p>
+      <a class="brand footer-brand" href="index.html">Lainey</a>
+      <p>The shop opens only when the public proof is better than the placeholder.</p>
     </div>
-    <div>
-      <h4>Around the table</h4>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <span>Essays</span>
-        <span>Reading Lists</span>
-        <a href="shop.html">Shop</a>
-      </nav>
-    </div>
-    <div>
-      <h4>The shop</h4>
-      <p>The shop is being prepared. Purchases will open through the Lainey Shopify checkout when live.</p>
-    </div>
-  </div>
-  <div class="footer-base">
-    <div class="footer-base-inner">
-      <span>© Lainey — from the table</span>
-      <span>Paper light, coffee dark.</span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#read">Read</a>
+      <a href="shop.html">Shop</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
     </div>
   </div>
 </footer>
-<script src="site.js"></script>
 </body>
 </html>
