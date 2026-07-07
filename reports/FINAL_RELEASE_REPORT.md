@@ -119,19 +119,20 @@ Verified public-source grep returned zero matches for:
 
 ## 13. Commit on main
 
-Pending at report creation time.
+Completed.
 
-This field is updated after the source commit is created.
+- `main`: `e25f83a` - `Stabilize Lainey visual direction`
+- `gh-pages`: `dc4c9cc` - `Publish editorial Lainey preview`
 
 ## 14. Deployment result
 
-Pending at report creation time.
+Completed.
 
-This field is updated after the `gh-pages` branch publish is completed.
+- Source branch push: `main` updated successfully
+- Static publish branch push: `gh-pages` updated successfully
+- Live GitHub Pages output verified after cache-busted reload
 
 ## 15. Live URLs or preview URLs
-
-Current live public site before final publish:
 
 - [https://cosmo4u1.github.io/lainey-shopify/](https://cosmo4u1.github.io/lainey-shopify/)
 - [https://cosmo4u1.github.io/lainey-shopify/shop.html](https://cosmo4u1.github.io/lainey-shopify/shop.html)
