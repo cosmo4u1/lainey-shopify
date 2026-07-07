@@ -13,9 +13,23 @@
     <a class="brand" href="index.html">Lainey</a>
     <nav class="nav">
       <a href="index.html">Home</a>
-      <a>Essays</a>
-      <a>Reading Lists</a>
-      <a href="shop.html" class="active">Shop</a>
+      <div class="nav-item">
+        <button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true">Read <span class="caret">▾</span></button>
+        <div class="drop">
+          <span class="drop-soon">Essays <span class="tag">soon</span></span>
+          <span class="drop-soon">Reading Lists <span class="tag">soon</span></span>
+          <span class="drop-soon">Notes from the Table <span class="tag">soon</span></span>
+        </div>
+      </div>
+      <div class="nav-item active-item">
+        <button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true">Shop <span class="caret">▾</span></button>
+        <div class="drop">
+          <a href="#wear">Lainey Wear</a>
+          <a href="#writings">Writings</a>
+          <a href="#things">Things</a>
+          <a href="#status">Shop Status <span class="tag">coming soon</span></a>
+        </div>
+      </div>
       <a>About</a>
       <a>Contact</a>
     </nav>
@@ -29,42 +43,45 @@
       <h1 class="hero-title">A future home for Lainey wear, writings, and <em>small things</em> from the world around the reading lists.</h1>
       <span class="status-line">Purchases will open through the Lainey Shopify checkout when the shop is live</span>
     </div>
+    <div class="stack shop-stack" aria-hidden="true">
+      <div class="blob blob-1 art-fabric"><span class="chip">the wear</span></div>
+      <div class="blob blob-2 art-coffee"><span class="chip">the table</span></div>
+      <div class="blob blob-3 art-paper"><span class="chip">the shelf</span></div>
+    </div>
   </section>
   <section class="section">
-    <div class="grid">
-      <div class="tile lane">
-        <div>
-          <div class="tile-mark">W</div>
-          <h3>Lainey Wear</h3>
-          <p>Soft, quiet pieces for coffee walks, bookshop days, and staying out a little later than planned.</p>
-        </div>
+    <div class="lane-row reveal" id="wear">
+      <div class="lane-art art-fabric"></div>
+      <div class="lane-copy">
+        <h3>Lainey Wear</h3>
+        <p>Soft, quiet pieces for coffee walks, bookshop days, and staying out a little later than planned.</p>
         <!-- Shopify collection URL goes here when live -->
         <span class="button secondary soon" aria-disabled="true">Coming soon</span>
       </div>
-      <div class="tile lane">
-        <div>
-          <div class="tile-mark">Wr</div>
-          <h3>Writings</h3>
-          <p>Essays, reading notes, lists, and longer pieces collected from Lainey's shelf.</p>
-        </div>
+    </div>
+    <div class="lane-row flip reveal" id="writings">
+      <div class="lane-art art-paper"></div>
+      <div class="lane-copy">
+        <h3>Writings</h3>
+        <p>Essays, reading notes, lists, and longer pieces collected from Lainey's shelf.</p>
         <!-- Shopify collection URL goes here when live -->
         <span class="button secondary soon" aria-disabled="true">Coming soon</span>
       </div>
-      <div class="tile lane">
-        <div>
-          <div class="tile-mark">T</div>
-          <h3>Things</h3>
-          <p>Small objects, paper goods, and seasonal extras shaped slowly.</p>
-        </div>
+    </div>
+    <div class="lane-row reveal" id="things">
+      <div class="lane-art art-coffee"></div>
+      <div class="lane-copy">
+        <h3>Things</h3>
+        <p>Small objects, paper goods, and seasonal extras shaped slowly.</p>
         <!-- Shopify collection URL goes here when live -->
         <span class="button secondary soon" aria-disabled="true">Coming soon</span>
       </div>
     </div>
   </section>
-  <div class="table-note">
+  <div class="table-note reveal" id="status">
     <div class="table-note-inner">
-      <p>“Nothing here is in a hurry. The shop opens when the things are ready, and not a day before.”</p>
-      <p class="small">— a note from Lainey’s table</p>
+      <p>“Built slowly, opened only when ready.”</p>
+      <p class="small">Purchases will open through the Lainey Shopify checkout when the shop is live.</p>
     </div>
   </div>
 </main>
@@ -78,8 +95,8 @@
       <h4>Around the table</h4>
       <nav class="footer-nav">
         <a href="index.html">Home</a>
-        <a>Essays</a>
-        <a>Reading Lists</a>
+        <span>Essays</span>
+        <span>Reading Lists</span>
         <a href="shop.html">Shop</a>
       </nav>
     </div>
@@ -95,5 +112,6 @@
     </div>
   </div>
 </footer>
+<script src="site.js"></script>
 </body>
 </html>
