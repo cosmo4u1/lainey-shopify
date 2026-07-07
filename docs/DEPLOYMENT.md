@@ -8,11 +8,19 @@ The public preview is GitHub Pages: https://cosmo4u1.github.io/lainey-shopify/
 - The `gh-pages` branch is updated only from the verified `prototype/` static output on `main`.
 - No build step, no environment variables, no external services required.
 
-Do not chase blocked services: Netlify is not retried, Builder.io is not forced, Vercel OAuth is not forced. These are optional future lanes, not launch-blocking.
+`prototype/` is the current public source. Builder, Netlify, and Vercel are not active launch paths — do not chase them.
+
+## Commerce path: Shopify
+
+Shopify is the required future checkout/order path. The Lainey Shopify store domain is https://1ev11w-fu.myshopify.com/ — cart, checkout, payments, and orders all live there, never on GitHub Pages.
+
+- No live purchasing exists on the GitHub Pages site yet.
+- The Shop page is preview-safe: "Coming soon" placeholders only.
+- Shop buttons should only point to verified Shopify collection/product URLs once the store is ready.
 
 ## Future lanes (not current)
 
-Node-capable hosts (Vercel, Cloudflare Pages, etc.) can serve the Next.js app later, once auth is clean.
+Node-capable hosts can serve the Next.js app later, once auth is clean.
 
 Implemented:
 

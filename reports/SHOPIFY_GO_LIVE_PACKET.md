@@ -1,33 +1,34 @@
 # Lainey Website Lane Packet
 
-Active website path: Builder-rendering headless Lainey support app with explicit static fallback.
+Current truth as of 2026-07-06:
+
+- GitHub Pages is the current public Lainey website: https://cosmo4u1.github.io/lainey-shopify/
+- `prototype/` is the current public source; `gh-pages` is updated only from verified `prototype/` output.
+- Shopify is the required future checkout/order path. Store domain: https://1ev11w-fu.myshopify.com/
+- No live purchasing exists on the GitHub Pages site yet.
+- Builder, Netlify, and Vercel are not active launch paths.
 
 Old Shopify themes: deprecated and reference-only.
-Shopify: future backend connection only.
-Zine: separate future build.
+Zine: excluded.
 
-## Built
+## Live public pages
 
-- Next.js support app
-- Builder model and content payload examples
-- route-based Builder page lookup
-- polished Lainey homepage fallback
-- pages: Home, Essays, Reading Lists, About, Contact
-- touchless ops docs
-- QA scope script
+- Home: controlled wordmark hero, nav (Home, Essays, Reading Lists, Shop, About, Contact)
+- Shop (`shop.html`): three lanes — Lainey Wear, Writings, Things — with "Coming soon" placeholders and no prices, cart, or product links.
 
-## Runtime truth
+## Commerce boundary
 
-- Implemented: Builder SDK initialization, route-based Builder lookup, Builder rendering when key and content exist, static fallback when they do not.
-- Not implemented in-session: Builder Space setup, Builder content creation, Builder preview URL setup, deployment auth.
+- All purchases route through Shopify: product pages, cart, checkout, payments, orders.
+- The GitHub Pages site is the front door only. It never hosts checkout or cart logic.
+- Shop buttons should only point to verified Shopify collection/product URLs once the store is ready. Until then, placeholders stay.
+- Product creation and the app connected behind Shopify stay outside this repo (see `docs/MYDESIGNS_PRODUCT_BOUNDARY.md`).
 
-## Remaining owner authorizations
+## Go-live steps remaining (owner-side, outside this repo)
 
-1. Connect the Builder Space to the GitHub repo.
-2. Add Builder public API key to the environment.
-3. Choose deployment host authorization.
-4. Add Shopify Storefront API token later only if commerce routing is needed.
+1. Create/verify the actual Shopify collection and product URLs in the store.
+2. Hand only verified URLs to this repo; wire them into the Shop page lanes.
+3. Update `gh-pages` from the verified `prototype/` output.
 
 ## Launch boundary
 
-Do not involve products in this website build.
+Do not involve product creation in this website build. Do not add product links before verified Shopify URLs exist.
