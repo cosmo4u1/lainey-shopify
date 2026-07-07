@@ -1,6 +1,18 @@
 # Deployment
 
-Default deployment targets: Vercel, Netlify, Cloudflare Pages, or another Node-capable host.
+## Current stable lane: GitHub Pages
+
+The public preview is GitHub Pages: https://cosmo4u1.github.io/lainey-shopify/
+
+- Served from the `gh-pages` branch (`index.html`, `styles.css`, `.nojekyll`).
+- The `gh-pages` branch is updated only from the verified `prototype/` static output on `main`.
+- No build step, no environment variables, no external services required.
+
+Do not chase blocked services: Netlify is not retried, Builder.io is not forced, Vercel OAuth is not forced. These are optional future lanes, not launch-blocking.
+
+## Future lanes (not current)
+
+Node-capable hosts (Vercel, Cloudflare Pages, etc.) can serve the Next.js app later, once auth is clean.
 
 Implemented:
 
